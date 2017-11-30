@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="lwt-Qi-p2c" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lwt-Qi-p2c" id="4L7-uM-dEF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oup-uY-2KQ">
+                        <rect key="frame" x="8" y="4" width="96" height="75.5"/>
+                        <color key="backgroundColor" red="1" green="0.33112659350000001" blue="0.23036801030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a demo article with very long title with two lines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcw-VO-Tjv">
+                        <rect key="frame" x="112" y="0.0" width="255" height="83.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oup-uY-2KQ" firstAttribute="top" secondItem="4L7-uM-dEF" secondAttribute="top" constant="4" id="5rf-V1-J1d"/>
+                    <constraint firstAttribute="bottom" secondItem="Oup-uY-2KQ" secondAttribute="bottom" constant="4" id="7Kb-tc-rX9"/>
+                    <constraint firstItem="wcw-VO-Tjv" firstAttribute="top" secondItem="4L7-uM-dEF" secondAttribute="top" id="8fg-n6-0aP"/>
+                    <constraint firstItem="wcw-VO-Tjv" firstAttribute="leading" secondItem="Oup-uY-2KQ" secondAttribute="trailing" constant="8" id="Asv-QP-Wd0"/>
+                    <constraint firstAttribute="trailing" secondItem="Oup-uY-2KQ" secondAttribute="trailing" constant="271" id="JWv-wE-Ity"/>
+                    <constraint firstAttribute="trailing" secondItem="wcw-VO-Tjv" secondAttribute="trailing" constant="8" id="rJG-hG-gMd"/>
+                    <constraint firstItem="Oup-uY-2KQ" firstAttribute="leading" secondItem="4L7-uM-dEF" secondAttribute="leading" constant="8" id="weJ-DE-Z56"/>
+                    <constraint firstAttribute="bottom" secondItem="wcw-VO-Tjv" secondAttribute="bottom" id="ztn-Nl-bhI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgThumbnail" destination="Oup-uY-2KQ" id="jGd-sp-iDe"/>
+                <outlet property="lblArticle" destination="wcw-VO-Tjv" id="5Oj-Jv-p5t"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="13"/>
+        </tableViewCell>
+    </objects>
+</document>
